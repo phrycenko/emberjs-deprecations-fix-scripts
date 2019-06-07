@@ -22,7 +22,6 @@
     "emberjs-deprecations-fix-scripts": "./bin/emberjs-deprecations-fix-scripts.js"
   },
   "scripts": {
-    "start": "node ./bin/emberjs-deprecations-fix-scripts PROPERTY ./test/dummy-root ./test/temp",
     "test": "tap test/*.js"
   },
   "devDependencies": {
