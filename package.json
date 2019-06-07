@@ -16,6 +16,7 @@
   },
   "files": [
     "bin",
+    "test",
     "utils"
   ],
   "bin": {
