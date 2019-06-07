@@ -1,0 +1,36 @@
+{
+  "name": "emberjs-deprecations-fix-scripts",
+  "version": "0.0.1",
+  "description": "Scripts to auto-fix EmberJS deprecations in the code",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/phrycenko/emberjs-deprecations-fix-scripts.git",
+    "directory": "."
+  },
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=8.10"
+  },
+  "bugs": {
+    "url": "https://github.com/phrycenko/emberjs-deprecations-fix-scripts/issues"
+  },
+  "files": [
+    "bin",
+    "utils"
+  ],
+  "bin": {
+    "emberjs-deprecations-fix-scripts": "./bin/emberjs-deprecations-fix-scripts.js"
+  },
+  "scripts": {
+    "test-start": "node ./bin/emberjs-deprecations-fix-scripts PROPERTY ./test/dummy-root ./test/temp",
+    "test": "tap test/*.js"
+  },
+  "devDependencies": {
+    "tap": "^12.1.1"
+  },
+  "dependencies": {
+    "rimraf": "^2.6.3",
+    "chalk": "^2.4.2",
+    "prompt-confirm": "^2.0.4"
+  }
+}
