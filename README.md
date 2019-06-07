@@ -31,11 +31,13 @@ And this is how this script works.
 
 ## Running
 
-To run this script 
+To run this script, you can eg add below to your ```package.json``` scripts
 
 ```javascript
-"start": "node emberjs-deprecations-fix-scripts PROPERTY ./test/dummy-root ./test/temp",
+"fix-start": "emberjs-deprecations-fix-scripts PROPERTY ./test/dummy-root ./test/temp",
 ```
+
+and then run ```npm run-script fix-start``` from command line
 
 Where ```PROPERTY``` is deprecation type constant.
 ```./test/dummy-root``` is source root directore which will be used to search files containing deprecated code,
